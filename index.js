@@ -18,3 +18,9 @@ function exactMatch(drivers, match) {
     return driver[matchKey] === matchValue
   })
 }
+
+function exactMatchToList(drivers, match) {
+  return exactMathc(drivers, match).map(function(driver) {
+    return driver.name
+  })
+}
